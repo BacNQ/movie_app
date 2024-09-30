@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useContext } from 'react';
 import { MovieContext } from '../context/MovieProvider';
-import PropType from "prop-types";
+import PropTypes from "prop-types";
 
 const responsive = {
     superLargeDesktop: {
@@ -50,8 +50,8 @@ const MovieList = ({ title, data }) => {
 }
 
 MovieList.propTypes = {
-    title: PropType.string,
-    data: PropType.array,
-};
+    title: PropTypes.string.isRequired,
+    data: PropTypes.array.isRequired
+}
 
 export default MovieList

@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import { useState } from 'react'
-import PropType from "prop-types";
+import PropTypes from "prop-types";
 import React from 'react'
 import "react-multi-carousel/lib/styles.css";
 import Modal from 'react-modal';
@@ -70,7 +70,7 @@ const MovieProvider = ({ children }) => {
 }
 
 MovieProvider.propTypes = {
-    children: PropType.node,
+    children: PropTypes.node.isRequired,
 };
 
 export { MovieContext, MovieProvider };
