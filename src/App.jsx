@@ -4,6 +4,7 @@ import Banner from './components/Banner'
 import MovieList from './components/MovieList'
 import MovieSearch from './components/MovieSearch'
 import { MovieProvider } from './context/MovieProvider'
+
 function App() {
   const [movie, setMovie] = useState([]);
   const [movieRate, setMovieRate] = useState([]);
